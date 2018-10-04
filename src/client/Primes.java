@@ -8,16 +8,16 @@ public class Primes implements Task<String>,Serializable {
 
 	
 	private static final long serialVersionUID = 1L;
-	private final  int max;
-	private final int min;
+	private int max;
+	private int min;
 	
 	
 
 	
-		public Primes(int max,int min)
+		public Primes(int min,int max)
 		{
-			this.max=max;
 			this.min=min;
+			this.max=max;
 		}
 		
 		@Override
